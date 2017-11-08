@@ -10,7 +10,6 @@
 </div>
 <h3 style="color: #5900cc">Lista filmów w bazie:</h3>
 
-
 <p th:each="elem: ${lista}">
     <a th:href="${'/film?id=' + elem.id}"> <img th:src="'movie'+${elem.id}+'.jpg'" style="width:130px;height:95px;" th:hspace="50"/></a>
     <a th:text="${elem.title}"></a>
@@ -18,6 +17,9 @@
 <td th:text="${elem.description}"></td>
 </p>
 
+<form th:action="@{/addmovieform}">
+    <input type="submit" value="Dodaj film"/>
+</form>
 
 </body>
 

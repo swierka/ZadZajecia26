@@ -1,10 +1,10 @@
-package pl.javastart.filmueb;
+package pl.javastart.filmueb.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @param year to rok produkcji
+ * @param year  to rok produkcji
  * @param photo to URL do zdjęcia
  * @param id to id filmu, ktore powinno byc nadawane automatycznie
  * @param comments to komentarze dot. konkretnego filmu
@@ -15,7 +15,7 @@ public class Movie {
     private String category;
     private int year;
     private String photo;
-    private Long id=0L;
+    private Long id = 0L;
     private List<Comment> comments;
 
     public Movie(String title, String description, String category, int year, String photo, Long id) {
@@ -28,7 +28,8 @@ public class Movie {
         comments = new ArrayList<>();
     }
 
-    public Movie (){}
+    public Movie() {
+    }
 
     public String getTitle() {
         return title;
@@ -88,6 +89,6 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "Tytuł: " + title +" ("+ year+ "); opis:" + description + "; gatunek:"+ category;
+        return "Nr: " + id + "Tytuł: " + title + " (" + year + "); opis: " + description + "; gatunek: " + category;
     }
 }
