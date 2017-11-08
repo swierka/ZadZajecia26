@@ -1,4 +1,4 @@
-package pl.javastart.filmueb;
+package pl.javastart.filmueb.Controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
