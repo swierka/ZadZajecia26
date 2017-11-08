@@ -89,6 +89,7 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "Nr: " + id + "Tytuł: " + title + " (" + year + "); opis: " + description + "; gatunek: " + category;
+        return "Film nr: " + id + " Tytuł: " + title + " (" + year + "); opis: " + description + "; gatunek: " +
+                category;
     }
 }
