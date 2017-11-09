@@ -10,11 +10,13 @@ public class Comment {
     private String author;
     private String content;
     private LocalDate date;
+    private Movie movie;
 
-    public Comment(String author, String content, LocalDate date) {
+    public Comment(String author, String content, LocalDate date, Movie movie) {
         this.author = author;
         this.content = content;
         this.date = date;
+        this.movie = movie;
     }
 
     public String getAuthor() {
@@ -39,5 +41,13 @@ public class Comment {
 
     public void setDate(LocalDate date) {
         this.date = date;
+    }
+
+    public Movie getMovie() {
+        return movie;
+    }
+
+    public void setMovie(Movie movie) {
+        this.movie = movie;
     }
 }
