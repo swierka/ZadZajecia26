@@ -1,10 +1,13 @@
 package pl.javastart.filmueb;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @param year to rok produkcji
  * @param photo to URL do zdjęcia
  * @param id to id filmu, ktore powinno byc nadawane automatycznie
- *
+ * @param comments to komentarze dot. konkretnego filmu
  * */
 public class Movie {
     private String title;
@@ -13,6 +16,7 @@ public class Movie {
     private int year;
     private String photo;
     private Long id=0L;
+    private List<Comment> comments;
 
     public Movie(String title, String description, String category, int year, String photo, Long id) {
         this.title = title;
@@ -21,6 +25,7 @@ public class Movie {
         this.year = year;
         this.photo = photo;
         this.id = id;
+        comments = new ArrayList<>();
     }
 
     public Movie (){}
@@ -71,6 +76,14 @@ public class Movie {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
     }
 
     @Override
