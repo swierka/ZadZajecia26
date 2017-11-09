@@ -2,6 +2,9 @@ package pl.javastart.filmueb;
 
 import java.time.LocalDate;
 
+/**
+ *
+ */
 public class Comment {
 
     private String author;
