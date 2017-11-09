@@ -1,5 +1,7 @@
 package pl.javastart.filmueb;
 
+import pl.javastart.filmueb.model.Movie;
+
 import java.time.LocalDate;
 
 /**
