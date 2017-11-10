@@ -35,8 +35,8 @@ public class MovieController {
             if (movies.getId() > (int) maxId) {
                 maxId = movies.getId();
             }
-            movie.setId(maxId + 1);
         }
+        movie.setId(maxId + 1);
         filmRepository.addMovie(movie);
 
         return movie.toString() + "<br/> został dodany"; //tymczasowo

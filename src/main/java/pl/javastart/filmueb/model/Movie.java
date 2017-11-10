@@ -18,7 +18,7 @@ public class Movie {
     private int year;
     private String photo;
     private Long id = 0L;
-    private List<Comment> comments;
+    private List<Comment> comments = new ArrayList<>();
 
     public Movie(String title, String description, String category, int year, String photo, Long id) {
         this.title = title;
@@ -27,7 +27,6 @@ public class Movie {
         this.year = year;
         this.photo = photo;
         this.id = id;
-        comments = new ArrayList<>();
     }
 
     public Movie() {
