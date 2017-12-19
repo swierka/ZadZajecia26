@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Filmueb</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body style="background-color: #c8c9cc">
+<div style="width: 999px; margin:auto">
+    <img src="banner.png"/>
+</div>
+<h2>Panel administratora</h2>
+<h3 style="color: #5900cc">Nadawanie uprawnien</h3>
+
+<form th:action="@{/admin}" method="post" th:object="${userRole}">
+    Podaj ID uzytkownika: <input type="number" th:field="*{id}"/> <br/>
+ <p>   Przypisz role:    <select th:field="*{role}">
+    <option th:each="role : ${T(pl.javastart.filmueb.model.Role).values()}" th:value="${role}"
+            th:text="${role.description}"></option>
+ </select> </p>
+    <input type="submit" value="Dodaj uprawnienia"/>
+</form>
+
+
+
+</body>
+
+</html>
