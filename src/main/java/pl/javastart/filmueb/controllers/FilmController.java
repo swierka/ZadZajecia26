@@ -1,4 +1,4 @@
-package pl.javastart.filmueb.Controllers;
+package pl.javastart.filmueb.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import pl.javastart.filmueb.model.Category;
-import pl.javastart.filmueb.model.Movie;
+import pl.javastart.filmueb.model.movieRelated.Category;
+import pl.javastart.filmueb.model.movieRelated.Movie;
 import pl.javastart.filmueb.repositories.FilmRepository;
 
 import java.util.List;

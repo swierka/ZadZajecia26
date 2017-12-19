@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Filmueb</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div style="width: 999px; margin:auto">
+    <img src="banner.png"/>
+</div>
+<h1>Logowanie do Filmueb</h1>
+<form action="/login" method="post">
+    Login: <br/>
+    <input type="text" name="username"/><br/>
+    Hasło: <br/>
+    <input type="password" name="password"/><br/>
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/> <br />
+    <input type="submit" value="Zaloguj"/><br/>
+</form>
+
+<br />
+    <p> Jezeli nie masz loginu i hasla, kliknij, aby zalozyc nowe konto. </p>
+    <a href="/registrationForm">Chce zalozyc konto</a>
+</body>
+</html>

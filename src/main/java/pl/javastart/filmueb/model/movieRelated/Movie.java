@@ -1,6 +1,4 @@
-package pl.javastart.filmueb.model;
-
-import pl.javastart.filmueb.Comment;
+package pl.javastart.filmueb.model.movieRelated;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,4 @@
-package pl.javastart.filmueb;
-
-import pl.javastart.filmueb.model.Movie;
+package pl.javastart.filmueb.model.movieRelated;
 
 import java.time.LocalDate;
 

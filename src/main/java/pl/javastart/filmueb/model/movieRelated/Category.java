@@ -1,4 +1,4 @@
-package pl.javastart.filmueb.model;
+package pl.javastart.filmueb.model.movieRelated;
 
 import java.lang.String;
 

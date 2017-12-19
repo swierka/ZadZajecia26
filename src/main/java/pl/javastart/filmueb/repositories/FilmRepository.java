@@ -2,8 +2,8 @@ package pl.javastart.filmueb.repositories;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import pl.javastart.filmueb.Comment;
-import pl.javastart.filmueb.model.Movie;
+import pl.javastart.filmueb.model.movieRelated.Comment;
+import pl.javastart.filmueb.model.movieRelated.Movie;
 
 
 import java.time.LocalDate;
